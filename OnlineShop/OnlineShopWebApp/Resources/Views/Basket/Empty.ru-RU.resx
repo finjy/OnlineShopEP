@@ -117,7 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="form.search.text" xml:space="preserve">
-    <value>Искать по названию</value>
+  <data name="button.continue" xml:space="preserve">
+    <value>Продолжить покупки</value>
+  </data>
+  <data name="page.header" xml:space="preserve">
+    <value>Корзина</value>
+  </data>
+  <data name="page.title" xml:space="preserve">
+    <value>Корзина</value>
+  </data>
+  <data name="table.cost" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="table.name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="table.noitems.text" xml:space="preserve">
+    <value>В корзине пока ничего нет.</value>
+  </data>
+  <data name="table.quantity" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="table.shoppinglist" xml:space="preserve">
+    <value>Список покупок</value>
+  </data>
+  <data name="table.total.text" xml:space="preserve">
+    <value>Всего</value>
   </data>
 </root>

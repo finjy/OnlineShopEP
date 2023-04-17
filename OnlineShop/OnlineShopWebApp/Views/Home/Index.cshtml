@@ -1,10 +1,7 @@
 ﻿@model List<ProductViewModel>
 
-@inject IStringLocalizer<HomeController> Localizer
-@inject IHtmlLocalizer<HomeController> HtmlLocalizer
-
 @{
-    ViewData["Title"] = Localizer["page.title"];
+    ViewData["Title"] = ViewLocalizer["page.title"];
 }
 
 <div class="container">

@@ -117,7 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="form.search.text" xml:space="preserve">
-    <value>Искать по названию</value>
+  <data name="button.continue" xml:space="preserve">
+    <value>Продолжить покупки</value>
+  </data>
+  <data name="page.header" xml:space="preserve">
+    <value>Сравнить</value>
+  </data>
+  <data name="page.nothing.text" xml:space="preserve">
+    <value>Пока сравнивать нечего.</value>
+  </data>
+  <data name="page.title" xml:space="preserve">
+    <value>Сравнить</value>
   </data>
 </root>
