@@ -34,30 +34,30 @@ namespace OnlineShop.Db
 
             var image1 = new Image
             {
-                Id = Guid.Parse("7512a027-6c2b-44ec-9dc1-460dc630a1e0"),
+                Id = Guid.Parse("255f76df-5217-4de6-9941-f011ea2042cb"),
                 Url = "/img/products/stilllife.jpg",
                 ProductId = product1Id
             };
 
             var image2 = new Image
             {
-                Id = Guid.Parse("7228b05f-8fb9-4171-a2e9-ab3aaeaf44cd"),
+                Id = Guid.Parse("50182c2e-8bd1-4d57-9c13-d7f231642d5b"),
                 Url = "/img/products/portret.jpg",
-                ProductId = product1Id
+                ProductId = product2Id
             };
 
             var image3 = new Image
             {
-                Id = Guid.Parse("7512a027-6c2b-44ec-9dc1-450dc630a1e0"),
+                Id = Guid.Parse("266ed356-5467-48ac-b1b2-ec3a45ca722a"),
                 Url = "/img/products/landscape.jpg",
-                ProductId = product1Id
+                ProductId = product3Id
             };
 
             var image4 = new Image
             {
-                Id = Guid.Parse("a604ee7e-aa0e-4ffc-b596-816570a9bc79"),
+                Id = Guid.Parse("8acc7169-6d98-456d-803e-9694472ceceb"),
                 Url = "/img/products/abstraction.jpg",
-                ProductId = product1Id
+                ProductId = product4Id
             };
 
             modelBuilder.Entity<Image>().HasData(image1, image2, image3, image4);

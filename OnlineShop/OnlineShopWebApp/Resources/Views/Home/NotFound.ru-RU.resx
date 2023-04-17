@@ -117,7 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="button.back.text" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="page.header.text" xml:space="preserve">
+    <value>Упс!</value>
+  </data>
+  <data name="page.notfound.text" xml:space="preserve">
+    <value>&lt;p&gt;К сожалению, ничего не найдено.&lt;br /&gt; Пожалуйста, вернитесь и попробуйте другой запрос.&lt;/p&gt;</value>
+  </data>
   <data name="page.title" xml:space="preserve">
-    <value>Главная</value>
+    <value>Упс!</value>
   </data>
 </root>

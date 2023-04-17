@@ -117,7 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="button.back.text" xml:space="preserve">
+    <value>Go back</value>
+  </data>
+  <data name="page.header.text" xml:space="preserve">
+    <value>Oops!</value>
+  </data>
+  <data name="page.notfound.text" xml:space="preserve">
+    <value>&lt;p&gt;Sorry, nothing was found.&lt;br /&gt; Please, go back and try once more.&lt;/p&gt;</value>
+  </data>
   <data name="page.title" xml:space="preserve">
-    <value>Главная</value>
+    <value>Oops!</value>
   </data>
 </root>
