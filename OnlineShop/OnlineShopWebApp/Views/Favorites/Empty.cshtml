@@ -1,14 +1,14 @@
 ﻿@{
-    ViewData["Title"] = "Favorites";  
+    ViewData["Title"] = ViewLocalizer["page.title"];
 }
 <div class="container">
-    <h2 class="mb-3">Favorites</h2>
+    <h2 class="mb-3">@ViewLocalizer["page.header"]</h2>
     <div class="row">
         <div class="col text-center">
-            <p>You have not added anything to the Favorites yet.</p>
+            <p>@ViewLocalizer["page.nothing.text"]</p>
             <div class="row mt-4 justify-content-center">
                 <div class="col-2">
-                    <a class="btn btn-outline-dark btn-sm text-nowrap active" href="/" role="button">Continue shopping</a>
+                    <a class="btn btn-outline-dark btn-sm text-nowrap active" href="/" role="button">@ViewLocalizer["button.continue"]</a>
                 </div>
             </div>
         </div>

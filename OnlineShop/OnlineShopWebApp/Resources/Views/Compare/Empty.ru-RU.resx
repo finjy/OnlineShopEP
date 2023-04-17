@@ -124,7 +124,7 @@
     <value>Сравнить</value>
   </data>
   <data name="page.nothing.text" xml:space="preserve">
-    <value>Пока сравнивать нечего.</value>
+    <value>Вы пока ничего не добавили к сравнению.</value>
   </data>
   <data name="page.title" xml:space="preserve">
     <value>Сравнить</value>
