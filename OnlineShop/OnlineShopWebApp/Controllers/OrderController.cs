@@ -50,5 +50,10 @@ namespace OnlineShopWebApp.Controllers
             _basketStorage.Clear(userId);
             return View();
         }
+
+        public IActionResult Buy()
+        {
+            return View();
+        }
     }
 }

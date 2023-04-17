@@ -3,51 +3,51 @@
 @model OrderFormViewModel
 
 @{
-    ViewData["Title"] = "Order";
+    ViewData["Title"] = ViewLocalizer["page.title"];
 }
 
 <div class="container">
-    <h2>Order</h2>
+    <h2>@ViewLocalizer["page.header"]</h2>
     <div class="row">
         <div class="col-3">
-            <h5>Your order:</h5>
+            <h5>@ViewLocalizer["page.yourorder.text"]:</h5>
             @foreach (var item in @Model.Basket.Items)
             {
                 <p>@item.Product.Name (@item.Quantity) - $@item.Cost</p>
             }
-            <h6>Total: $@Model.Basket.TotalCost</h6>
+            <h6>@ViewLocalizer["page.total.text"]: $@Model.Basket.TotalCost</h6>
         </div>
         <form asp-action="Buy" asp-controller="Order">
             <div class="validation" asp-validation-summary="All"></div>
-            <h5>Input your delivery details:</h5>
-            <p>Address:</p>
+            <h5>@ViewLocalizer["page.input.text"]:</h5>
+            <p>@ViewLocalizer["page.address.text"]:</p>
             <div class="mb-3">
-                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.ZipCode" placeholder="Zip Code" />
+                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.ZipCode" placeholder=@ViewLocalizer["form.zipcode"] />
                 <span asp-validation-for="DeliveryInfo.Address.ZipCode"></span>
             </div>
             <div class="mb-3">
-                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.Country" placeholder="Country" />
+                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.Country" placeholder=@ViewLocalizer["form.country"] />
                 <span asp-validation-for="DeliveryInfo.Address.Country"></span>
             </div>
             <div class="mb-3">
-                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.City" placeholder="City" />
+                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.City" placeholder=@ViewLocalizer["form.city"] />
                 <span asp-validation-for="DeliveryInfo.Address.City"></span>
             </div>
             <div class="mb-3">
-                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.Street" placeholder="Street" />
+                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.Street" placeholder=@ViewLocalizer["form.street"] />
                 <span asp-validation-for="DeliveryInfo.Address.Street"></span>
             </div>
             <div class="mb-3">
-                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.House" placeholder="House" />
+                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.House" placeholder=@ViewLocalizer["form.house"] />
                 <span asp-validation-for="DeliveryInfo.Address.House"></span>
             </div>
             <div class="mb-3">
-                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.Apartment" placeholder="Apartment" />
+                <input class="form-control form-control-sm" asp-for="DeliveryInfo.Address.Apartment" placeholder=@ViewLocalizer["form.apartment"] />
                 <span asp-validation-for="DeliveryInfo.Address.Apartment"></span>
             </div>
-            <p>Contacts:</p>
+            <p>@ViewLocalizer["page.contacts.text"]:</p>
             <div class="mb-3">
-                <input class="form-control form-control-sm" type="tel" asp-for="DeliveryInfo.Phone" placeholder="Phone" />
+                <input class="form-control form-control-sm" type="tel" asp-for="DeliveryInfo.Phone" placeholder=@ViewLocalizer["form.phone"] />
                 <span asp-validation-for="DeliveryInfo.Phone"></span>
             </div>
             <div class="mb-3">
@@ -55,13 +55,13 @@
                 <span asp-validation-for="DeliveryInfo.Email"></span>
             </div>
             <div class="mb-3">
-                <button class="btn btn-dark btn-sm text-nowrap mt-3" type="submit" asp-controller="Order" asp-action="Buy">Buy</button>
+                <button class="btn btn-dark btn-sm text-nowrap mt-3" type="submit" asp-controller="Order" asp-action="Buy">@ViewLocalizer["button.buy"]</button>
             </div>
         </form>
     </div>
     <div class="row">
         <div class="col-12 text-center">
-            <a class="btn btn-outline-dark btn-sm text-nowrap" href="/" role="button">Continue shopping</a>
+            <a class="btn btn-outline-dark btn-sm text-nowrap" href="/" role="button">@ViewLocalizer["button.continue"]</a>
         </div>
     </div>
 </div>

@@ -117,7 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="form.search.text" xml:space="preserve">
-    <value>Искать по названию</value>
+  <data name="button.buy" xml:space="preserve">
+    <value>Купить</value>
+  </data>
+  <data name="button.continue" xml:space="preserve">
+    <value>Продолжить покупки</value>
+  </data>
+  <data name="form.apartment" xml:space="preserve">
+    <value>Квартира</value>
+  </data>
+  <data name="form.city" xml:space="preserve">
+    <value>Город</value>
+  </data>
+  <data name="form.country" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="form.house" xml:space="preserve">
+    <value>Дом</value>
+  </data>
+  <data name="form.phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="form.street" xml:space="preserve">
+    <value>Улица</value>
+  </data>
+  <data name="form.zipcode" xml:space="preserve">
+    <value>Индекс</value>
+  </data>
+  <data name="page.address.text" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="page.contacts.text" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="page.header" xml:space="preserve">
+    <value>Заказ</value>
+  </data>
+  <data name="page.input.text" xml:space="preserve">
+    <value>Укажите информацию для доставки</value>
+  </data>
+  <data name="page.title" xml:space="preserve">
+    <value>Заказ</value>
+  </data>
+  <data name="page.total.text" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="page.yourorder.text" xml:space="preserve">
+    <value>Ваш заказ</value>
   </data>
 </root>
