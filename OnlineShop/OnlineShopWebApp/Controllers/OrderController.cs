@@ -51,7 +51,7 @@ namespace OnlineShopWebApp.Controllers
             return View();
         }
 
-        public IActionResult Buy()
+        public IActionResult Buy() // Allow to avoid error 405 if the language is changing on the page after HttpPost method "Buy" result. 
         {
             return View();
         }
