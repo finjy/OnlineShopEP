@@ -50,5 +50,10 @@ namespace OnlineShopWebApp.Controllers
             _basketStorage.Clear(userId);
             return View();
         }
+
+        public IActionResult Buy() // Allow to avoid error 405 if the language is changing on the page after HttpPost method "Buy" result. 
+        {
+            return View();
+        }
     }
 }

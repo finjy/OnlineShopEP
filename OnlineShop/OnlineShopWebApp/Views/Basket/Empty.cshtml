@@ -1,30 +1,30 @@
 ﻿
 
 @{
-    ViewData["Title"] = "Basket";  
+    ViewData["Title"] = ViewLocalizer["page.title"];
 }
 <div class="container">
-    <h2>Basket</h2>
+    <h2>@ViewLocalizer["page.header"]</h2>
     <div class="row">
         <div class="col justify-content-center">
             <table class="table border-left border-right border-top border-bottom mt-2">
-                <caption>Shopping list</caption>
+                <caption>@ViewLocalizer["table.shoppinglist"]</caption>
                 <thead class="table-light text-center">
                     <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Cost</th>
+                        <th scope="col">@ViewLocalizer["table.name"]</th>
+                        <th scope="col">@ViewLocalizer["table.quantity"]</th>
+                        <th scope="col">@ViewLocalizer["table.cost"]</th>
                     </tr>
                 </thead>
                 <tbody class="border-top-0 text-center">
                     <tr>
-                        <td colspan="3">There are no items in the basket yet.</td>
+                        <td colspan="3">@ViewLocalizer["table.noitems.text"]</td>
                     </tr>
                 </tbody>
             </table>
             <div class="row">
                 <div class="col-12 text-right">
-                    <a class="btn btn-outline-dark btn-sm text-nowrap active" href="/" role="button">Continue shopping</a>
+                    <a class="btn btn-outline-dark btn-sm text-nowrap active" href="/" role="button">@ViewLocalizer["button.continue"]</a>
                 </div>
             </div>
         </div>

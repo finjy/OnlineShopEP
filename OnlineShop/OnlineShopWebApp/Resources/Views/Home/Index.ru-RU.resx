@@ -120,4 +120,7 @@
   <data name="form.search.text" xml:space="preserve">
     <value>Искать по названию</value>
   </data>
+  <data name="page.title" xml:space="preserve">
+    <value>Главная</value>
+  </data>
 </root>

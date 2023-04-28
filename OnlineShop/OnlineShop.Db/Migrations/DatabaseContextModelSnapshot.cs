@@ -175,26 +175,26 @@ namespace OnlineShop.Db.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("7512a027-6c2b-44ec-9dc1-460dc630a1e0"),
+                            Id = new Guid("255f76df-5217-4de6-9941-f011ea2042cb"),
                             ProductId = new Guid("a604ee7e-aa0e-4ffc-b596-816570a9bc79"),
                             Url = "/img/products/stilllife.jpg"
                         },
                         new
                         {
-                            Id = new Guid("7228b05f-8fb9-4171-a2e9-ab3aaeaf44cd"),
-                            ProductId = new Guid("a604ee7e-aa0e-4ffc-b596-816570a9bc79"),
+                            Id = new Guid("50182c2e-8bd1-4d57-9c13-d7f231642d5b"),
+                            ProductId = new Guid("7228b05f-8fb9-4171-a2e9-ab3aaeaf44cd"),
                             Url = "/img/products/portret.jpg"
                         },
                         new
                         {
-                            Id = new Guid("7512a027-6c2b-44ec-9dc1-450dc630a1e0"),
-                            ProductId = new Guid("a604ee7e-aa0e-4ffc-b596-816570a9bc79"),
+                            Id = new Guid("266ed356-5467-48ac-b1b2-ec3a45ca722a"),
+                            ProductId = new Guid("e66f97c7-6414-423b-9589-8c92a964df62"),
                             Url = "/img/products/landscape.jpg"
                         },
                         new
                         {
-                            Id = new Guid("a604ee7e-aa0e-4ffc-b596-816570a9bc79"),
-                            ProductId = new Guid("a604ee7e-aa0e-4ffc-b596-816570a9bc79"),
+                            Id = new Guid("8acc7169-6d98-456d-803e-9694472ceceb"),
+                            ProductId = new Guid("ba082277-4b6f-4e86-a922-07353ce4ad13"),
                             Url = "/img/products/abstraction.jpg"
                         });
                 });

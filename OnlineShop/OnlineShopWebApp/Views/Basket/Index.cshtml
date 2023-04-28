@@ -1,22 +1,20 @@
-﻿@using OnlineShopWebApp
-@using OnlineShopWebApp.Models
-@model BasketViewModel
+﻿@model BasketViewModel
 
 @{
-    ViewData["Title"] = "Basket";
+    ViewData["Title"] = ViewLocalizer["page.title"];
 }
 
 <div class="container">
-    <h2>Basket</h2>
+    <h2>@ViewLocalizer["page.header"]</h2>
     <div class="row">
         <div class="col">
             <table class="table border-left border-right border-top border-bottom mt-2">
-                <caption>Shopping list</caption>
+                <caption>@ViewLocalizer["table.shoppinglist"]</caption>
                 <thead class="table-light" align="center">
                     <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Cost</th>
+                        <th scope="col">@ViewLocalizer["table.name"]</th>
+                        <th scope="col">@ViewLocalizer["table.quantity"]</th>
+                        <th scope="col">@ViewLocalizer["table.cost"]</th>
                     </tr>
                 </thead>
                 @foreach (var item in Model.Items)
@@ -44,19 +42,19 @@
                         <td></td>
                         <td>
                             <a class="btn btn-outline-dark btn-sm text-nowrap" role="button"
-                               asp-area="" asp-controller="Basket" asp-action="Clear">Clear basket</a>
+                               asp-area="" asp-controller="Basket" asp-action="Clear">@ViewLocalizer["button.clear"]</a>
                         </td>
-                        <td colspan="3" class="align-content-end"><b>Total: $@Model.TotalCost</b></td>
+                        <td colspan="3" class="align-content-end"><b>@ViewLocalizer["table.total.text"]: $@Model.TotalCost</b></td>
                     </tr>
                 </tfoot>
             </table>
             <div class="row justify-content-end">
                 <div class="col-2">
-                    <a class="btn btn-outline-dark btn-sm text-nowrap" href="/" role="button">Continue shopping</a>
+                    <a class="btn btn-outline-dark btn-sm text-nowrap" href="/" role="button">@ViewLocalizer["button.continue"]</a>
                 </div>
                 <div class="col-2">
                     <a class="btn btn-outline-dark btn-sm text-nowrap" role="button"
-                       asp-area="" asp-controller="Order" asp-action="Index">Place your order</a>
+                       asp-area="" asp-controller="Order" asp-action="Index">@ViewLocalizer["button.order"]</a>
                 </div>
             </div>
         </div>

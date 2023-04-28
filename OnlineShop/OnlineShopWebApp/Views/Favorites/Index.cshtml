@@ -1,14 +1,12 @@
-﻿@using OnlineShopWebApp.Models
-@model List<ProductViewModel>
-
+﻿@model List<ProductViewModel>
 @{
-    ViewData["Title"] = "Favorites";
+    ViewData["Title"] = ViewLocalizer["page.title"];
 }
 
 <div class="container">
     <div class="row">
         <div class="col-12 mb-4">
-            <h2>Favorites</h2>
+            <h2>@ViewLocalizer["page.header"]</h2>
         </div>
         @foreach (var product in Model)
         {
@@ -20,11 +18,11 @@
                 <div class="row justify-content-between">
                     <div class="col-auto text-left">
                         <a class="btn btn-outline-dark btn-sm text-nowrap" role="button"
-                       asp-controller="Basket" asp-action="Add" asp-route-id="@product.Id">Add to basket</a>
+                       asp-controller="Basket" asp-action="Add" asp-route-id="@product.Id">@ViewLocalizer["button.add"]</a>
                     </div>
                     <div class="col-auto text-right">
                         <a class="btn btn-outline-dark btn-sm text-nowrap" role="button"
-                       asp-controller="Favorites" asp-action="Remove" asp-route-id="@product.Id">Remove</a>
+                       asp-controller="Favorites" asp-action="Remove" asp-route-id="@product.Id">@ViewLocalizer["button.remove"]</a>
                     </div>
                 </div>
             </div>
@@ -32,11 +30,11 @@
     </div>
     <div class="row mt-4">
         <div class="col-6 text-right">
-            <a class="btn btn-outline-dark btn-sm text-nowrap" role="button" href="/">Continue shopping</a>
+            <a class="btn btn-outline-dark btn-sm text-nowrap" role="button" href="/">@ViewLocalizer["button.continue"]</a>
         </div>
         <div class="col-6 text-left">
             <a class="btn btn-outline-dark btn-sm text-nowrap" role="button"
-               asp-controller="Favorites" asp-action="Clear">Clear</a>
+               asp-controller="Favorites" asp-action="Clear">@ViewLocalizer["button.clear"]</a>
         </div>
     </div>
 </div>

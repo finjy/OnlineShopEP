@@ -4,25 +4,25 @@
 @model SignupViewModel
 
 @{
-    ViewData["Title"] = "Sign up";
+    ViewData["Title"] = ViewLocalizer["page.title"];
 }
 <div class="container align-content-center">
     <div class="row text-center">
         <div class="col-4 mx-auto">
-            <h2>Sign up</h2>
+            <h2>@ViewLocalizer["page.header"]</h2>
             <form asp-controller="Account" asp-action="Signup">
                 <div class="validation" asp-validation-summary="All"></div>
                 <input type="hidden" name="ReturnUrl" value="@Model.ReturnUrl" />
                 <div class="mb-3">
-                    <input class="form-control" asp-for="FirstName" placeholder="First name">
+                    <input class="form-control" asp-for="FirstName" placeholder=@ViewLocalizer["form.firstname"]>
                     <span asp-validation-for="FirstName"></span>
                 </div>
                 <div class="mb-3">
-                    <input class="form-control" asp-for="LastName" placeholder="Last name">
+                    <input class="form-control" asp-for="LastName" placeholder=@ViewLocalizer["form.lastname"]>
                     <span asp-validation-for="LastName"></span>
                 </div>
                 <div class="mb-3">
-                    <input class="form-control" asp-for="Phone" placeholder="Phone number">
+                    <input class="form-control" asp-for="Phone" placeholder=@ViewLocalizer["form.phone"]>
                     <span asp-validation-for="Phone"></span>
                 </div>
                 <div class="mb-3">
@@ -30,19 +30,19 @@
                     <span asp-validation-for="Email"></span>
                 </div>
                 <div class="mb-3">
-                    <input class="form-control" asp-for="Password" type="password" placeholder="Password">
+                    <input class="form-control" asp-for="Password" type="password" placeholder=@ViewLocalizer["form.password"]>
                     <span asp-validation-for="Password"></span>
                 </div>
                 <div class="mb-3">
-                    <input class="form-control" asp-for="ConfirmPassword" type="password" placeholder="Confirm password">
+                    <input class="form-control" asp-for="ConfirmPassword" type="password" placeholder=@ViewLocalizer["form.confirmpass"]>
                     <span asp-validation-for="ConfirmPassword"></span>
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-outline-dark btn-sm active" asp-controller="Account" asp-action="Signup">Sign up</button>
+                    <button type="submit" class="btn btn-outline-dark btn-sm active" asp-controller="Account" asp-action="Signup">@ViewLocalizer["button.signup"]</button>
                 </div>
             </form>
             <div class="mb-3">
-                Already have an account? <a asp-controller="Account" asp-action="Signin">Sign in</a>
+                @ViewLocalizer["page.haveaccount.text"] <a asp-controller="Account" asp-action="Signin">@ViewLocalizer["link.signin"]</a>
             </div>
         </div>
     </div>

@@ -33,7 +33,7 @@ namespace OnlineShopWebApp.Controllers
 
             var products = _productStorage.SearchByName(name).ToList();
             var productViewModels = products.ToProductViewModels();
-            
+
             if (!productViewModels.Any())
             {
                 return View("NotFound");

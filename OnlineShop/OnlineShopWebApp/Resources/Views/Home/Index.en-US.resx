@@ -120,4 +120,7 @@
   <data name="form.search.text" xml:space="preserve">
     <value>Search by name</value>
   </data>
+  <data name="page.title" xml:space="preserve">
+    <value>Home</value>
+  </data>
 </root>

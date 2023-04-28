@@ -3,12 +3,12 @@
 @model SigninViewModel
 
 @{
-    ViewData["Title"] = "Sign in";
+    ViewData["Title"] = ViewLocalizer["page.title"];
 }
 <div class="container align-content-center">
     <div class="row text-center">
         <div class="col-4 mx-auto">
-            <h2>Sign in</h2>
+            <h2>@ViewLocalizer["page.header"]</h2>
             <form asp-action="Signin" asp-controller="Account" >
                 <div class="validation" asp-validation-summary="ModelOnly"></div>
                 <input type="hidden" name="ReturnUrl" value="@Model.ReturnUrl" />
@@ -17,21 +17,21 @@
                     <span asp-validation-for="Email"></span>
                 </div>
                 <div class="mb-3">
-                    <input class="form-control" asp-for="Password" type="password" placeholder="Password">
+                    <input class="form-control" asp-for="Password" type="password" placeholder=@ViewLocalizer["form.password.text"]>
                     <span asp-validation-for="Password"></span>
                 </div>
                 <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" value="true" name="rememberme">
                     <label class="form-check-label">
-                        Remember me
+                       @ViewLocalizer["checkbox.text"]
                     </label>
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-outline-dark btn-sm active" asp-controller="Account" asp-action="Signin">Sign in</button>
+                    <button type="submit" class="btn btn-outline-dark btn-sm active" asp-controller="Account" asp-action="Signin">@ViewLocalizer["button.signin"]</button>
                 </div>
             </form>
             <div class="mb-3">
-                Don't have an account? <a asp-controller="Account" asp-action="Signup" asp-route-returnUrl="@Model.ReturnUrl">Sign up</a>
+                @ViewLocalizer["page.haveaccount.text"] <a asp-controller="Account" asp-action="Signup" asp-route-returnUrl="@Model.ReturnUrl">@ViewLocalizer["link.signup"]</a>
             </div>
         </div>
     </div>
